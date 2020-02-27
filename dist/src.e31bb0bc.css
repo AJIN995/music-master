@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: RobotoCondensed;
+    src: url(/roboto-condensed.light.6709adf4.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: EconomicBold;
+    src: url(/economica-bold.12a9e27d.ttf);
+}
+body {
+    margin: 0px;
+    padding: 2.5%;
+    font-size: 20px;
+    height: 100vh;
+    background: #7b7b7b;
+    overflow: auto;
+    text-align: center;
+    font-family: 'RobotoCondensed';
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'EconomicBold';
+    color: #ffffff;
+}
+
+.artist-image-in {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 4px solid #35c535;
+    display: inline-block;
+    margin: 5px 0px 20px 0px;
+    object-fit: cover;
+}
+
+.pintiles-in {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    margin: 15px;
+    vertical-align: top;
+    border-radius: 50px 0px 0px 0px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.pintiles-in img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px 0px 0px 0px;
+}
+
+.pintiles-in p {
+    font-size: 15px;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    color: #000000;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'EconomicBold';
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.pintiles-in:hover {
+    transform: scale(1.02);
+    transition: 0.3s linear;
+    transform-origin: center;
+}
+.search-input {
+    font-size: 14px;
+    width: calc(100% - 100px);
+    height: 40px;
+    padding: 5px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0;
+}
+.search-btn {
+    height: 40px;
+    font-size: 15px;
+    width: 100px;
+    background: #ececec;
+    border: 1px solid #eeeeee;
+    border-radius: 0px 10px 10px 0px;
+    border-left: 0;
+    vertical-align: top;
+}
+.search-input:focus {
+    outline: 0;
+    border: 1px solid #35c535;
+}
+.pintiles-in:hover p {
+    background: #35c535;
+    color: #ffffff;
+    transition: 0.3s linear;
+}
+.artist-image-in + p {
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-family: 'EconomicBold';
+}
+.artist-image-in + p + p {
+    color: #ffffff;
+    font-family: 'EconomicBold';
+    margin-bottom: 30px;
+}
+.search-holder {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
